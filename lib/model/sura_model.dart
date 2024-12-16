@@ -2,7 +2,8 @@ class SuraModel {
   String suraArabicName;
   String suraEnglishName;
   String suraVerses;
-  int index;
+  String fileName;
+
   static List<String> arabicAuranSuras = [
     "الفاتحه",
     "البقرة",
@@ -351,20 +352,20 @@ class SuraModel {
     '5',
     '6'
   ];
-
+  static List<SuraModel> suraList = [];
   SuraModel(
       {required this.suraArabicName,
       required this.suraEnglishName,
       required this.suraVerses,
-      required this.index});
+      required this.fileName});
 
-  static SuraModel getSuraModel(int index) {
-    return SuraModel(
-        suraArabicName: arabicAuranSuras[index],
-        suraEnglishName: englishQuranSurahs[index],
-        suraVerses: ayaNumber[index],
-        index: index);
-  }
+  // static SuraModel getSuraModel(int index) {
+  //   return SuraModel(
+  //       suraArabicName: arabicAuranSuras[index],
+  //       suraEnglishName: englishQuranSurahs[index],
+  //       suraVerses: ayaNumber[index],
+  //       index: index);
+  // }
 
-static int getItemCount() => ayaNumber.length;
+  static int getItemCount() => ayaNumber.length;
 }

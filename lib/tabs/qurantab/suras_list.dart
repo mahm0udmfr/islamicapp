@@ -3,11 +3,11 @@ import 'package:islamicapp/colors.dart';
 import 'package:islamicapp/fontsclass.dart';
 import 'package:islamicapp/model/sura_model.dart';
 
-
 class SurasList extends StatelessWidget {
-    SuraModel suraModel;
-    void Function()? onTap;
-   SurasList({super.key, required this.suraModel,required this.onTap});
+  SuraModel suraModel;
+  int index;
+  void Function()? onTap;
+  SurasList({super.key, required this.suraModel, required this.onTap,required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class SurasList extends StatelessWidget {
         backgroundImage: const AssetImage("assets/images/sgod.png"),
         backgroundColor: AppColor.tranparent,
         child: Text(
-          "${suraModel.index + 1}",
+          "${index + 1}",
           style: const TextStyle(
               color: AppColor.white,
               fontFamily: FontsName.janafont,

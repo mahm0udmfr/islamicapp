@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamicapp/colors.dart';
+import 'package:islamicapp/fontsclass.dart';
 
 class SuraContent extends StatelessWidget {
   final String suracontent;
@@ -31,7 +32,7 @@ class SuraContent extends StatelessWidget {
           '$suracontent[${index + 1}]',
           style: TextStyle(
             color: (currentindex == index) ? AppColor.black : AppColor.gold,
-            fontSize: 18,
+            fontSize: 20,fontFamily: FontsName.janafont
           ),
           textAlign: TextAlign.center,
           textDirection: TextDirection.rtl,
