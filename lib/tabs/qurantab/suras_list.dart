@@ -17,7 +17,7 @@ class SurasList extends StatelessWidget {
         backgroundImage: const AssetImage("assets/images/sgod.png"),
         backgroundColor: AppColor.tranparent,
         child: Text(
-          "${index + 1}",
+          suraModel.fileName.replaceAll(".txt", ""),
           style: const TextStyle(
               color: AppColor.white,
               fontFamily: FontsName.janafont,

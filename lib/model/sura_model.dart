@@ -367,5 +367,5 @@ class SuraModel {
   //       index: index);
   // }
 
-  static int getItemCount() => ayaNumber.length;
+  // static int getItemCount() => ayaNumber.length;
 }
